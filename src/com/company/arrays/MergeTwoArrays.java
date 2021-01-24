@@ -12,12 +12,13 @@ public class MergeTwoArrays {
         int[] secondArray = {0,2,4,6,8,10,12};
 
         System.out.println(mergeArrays(firstArray,secondArray));
+        mergeArrays(firstArray,secondArray);
 
     }
 
     public static int[] mergeArrays(int[] myArray, int[] aliceArray) {
 
-        //set up out merged Array
+        //set up out merged Array / size is equal to both arrays
         int[] mergedArray = new int[myArray.length + aliceArray.length];
 
         int currentIndexMine = 0;

@@ -10,7 +10,7 @@ public class ReverseInteger {
 
         System.out.println(reverseInteger(4321));
 
-        System.out.println(reverseInteger2(4321));
+//        System.out.println(reverseInteger2(4321));
 
     }
 
@@ -25,19 +25,19 @@ public class ReverseInteger {
         return reverse;
 
     }
-
-    public static int reverseInteger2(int number) {
-
-        String reverse = "";
-        String num = String.valueOf(number);
-
-        for (int i = num.length() - 1; i <= 0; i--) {
-            reverse += reverse + i;
-        }
-
-
-        int result = Integer.parseInt(reverse);
-        return result;
-
-    }
+//
+//    public static int reverseInteger2(int number) {
+//
+//        String reverse = "";
+//        String num = String.valueOf(number);
+//
+//        for (int i = num.length() - 1; i <= 0; i--) {
+//            reverse += reverse + i;
+//        }
+//
+//
+//        int result = Integer.parseInt(reverse);
+//        return result;
+//
+//    }
 }

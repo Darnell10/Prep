@@ -24,6 +24,7 @@ public class    DeleteANode {
 
     }
 
+    /**O(1) time and O(1)O(1) space*/
     public static void deleteNode(LinkedListNode nodeToDelete) {
         // get the input node's next node, the one we want to skip to
         LinkedListNode nextNode = nodeToDelete.next;
