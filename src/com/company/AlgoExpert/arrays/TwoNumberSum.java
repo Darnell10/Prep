@@ -64,9 +64,6 @@ public class TwoNumberSum {
             // if the currentSum and target are equal then we add left and right pointer
             // to the newArray and return the new array
             if (currentSum == target) {
-//                newArray[0] = array[leftPointer];
-//                newArray[newArray.length - 1] = array[rightPointer];
-//                return newArray;
                 return new int[] {array[leftPointer],array[rightPointer]};
                 //if the currentSum is less than target slide left pointer
             } else if (currentSum < target) {

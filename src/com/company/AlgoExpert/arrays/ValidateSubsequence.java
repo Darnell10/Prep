@@ -11,7 +11,7 @@ public class ValidateSubsequence {
 
 
     }
-
+    /**Time: O(n), Space: O(1)*/
     public static Boolean isValidSequence(List<Integer> array, List<Integer> sequence) {
         int arrayIndex = 0;
         int sequenceIndex = 0;
