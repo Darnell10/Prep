@@ -1,9 +1,10 @@
-package com.company.AlgoExpert;
+package com.company.AlgoExpert.arrays;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 
+/** find 2 numbers in the array that when added equal the target number */
 public class TwoNumberSum {
 
     public static void main(String[] args) {
