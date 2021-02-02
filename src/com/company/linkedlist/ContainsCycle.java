@@ -29,6 +29,28 @@ public class ContainsCycle {
 
         return false;
     }
+    /** Time : O(n) , Space : O(1)
+     * this varien returns the node that is the origin of the loop*/
+    public static LinkedListNode findLoop(LinkedListNode head) {
+
+        LinkedListNode	slowRunner = head.next;
+        LinkedListNode	fastRunner = head.next.next;
+
+        while(slowRunner != fastRunner){
+            slowRunner = slowRunner.next;
+            fastRunner = fastRunner.next.next;
+        }
+
+        slowRunner = head;
+
+        while(slowRunner != fastRunner){
+            slowRunner = slowRunner.next;
+            fastRunner = fastRunner.next;
+        }
+
+        return slowRunner;
+    }
+
 
     public static class LinkedListNode {
 

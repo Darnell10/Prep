@@ -24,7 +24,7 @@ public class BracketValidator {
      * If it is, we pop from the stack. If it isn't, or if the stack is empty, we return false.
      * If we finish iterating and our stack is empty, we know every opener was properly closed.
      * */
-
+        /** Time : O(n) , Space : O(n)*/
     public static boolean isValid(String code) {
         Map<Character, Character> openersToClosers = new HashMap<>();
         openersToClosers.put('(', ')');
