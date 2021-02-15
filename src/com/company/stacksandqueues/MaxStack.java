@@ -3,7 +3,13 @@ package com.company.stacksandqueues;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+/** Time : O(1) , Space O(m)*/
 public class MaxStack {
+
+    public static void main(String[] args) {
+
+
+    }
 
    private Deque<Integer> stack = new ArrayDeque<>();
    private Deque<Integer> max = new ArrayDeque<>();
