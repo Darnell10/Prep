@@ -10,6 +10,7 @@ public class TwoNumberSum {
     public static void main(String[] args) {
 
         int[] array = {10, 3, 6, 8, 3, 34, 21, 3, 12};
+        //3,3,3,6,8,10,12,21,34
 
         System.out.println(twoNumberSum1(array, 20));
 
@@ -51,7 +52,7 @@ public class TwoNumberSum {
      * Time : O(nLog(n)), Space: O(1)
      */
     public static int[] twoNumberSum3(int[] array, int target) {
-        int[] newArray = new int[2];
+        //int[] newArray = new int[2];
         // Sort out array
         Arrays.sort(array);
         // create Pointers

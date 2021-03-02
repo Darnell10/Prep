@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
 
+
         LinkedList<String> linkedList = new LinkedList<>();
 
         linkedList.add("D");
@@ -119,7 +120,7 @@ public class Main {
             this.value = value;
         }
     }
-
+ 
 }
 
 
