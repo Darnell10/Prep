@@ -4,8 +4,8 @@ public class IsMonotonic {
 
     public static void main(String[] args) {
 
-        int[] array = {2,2,2,1,4,5};
-        int[] array2 = {1,2,3,4,4,5};
+        int[] array = {2, 2, 2, 1, 4, 5};
+        int[] array2 = {1, 2, 3, 4, 4, 5};
 
         System.out.println(isMonotonic(array));
         System.out.println(isMonotonic(array2));
@@ -16,7 +16,7 @@ public class IsMonotonic {
         boolean isNonDecreasing = true;
         boolean isNonIncreasing = true;
 
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++) {
             if (array[i] < array[i - 1]) {
                 isNonDecreasing = false;
             }
