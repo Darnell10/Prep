@@ -1,18 +1,19 @@
 package com.company.arrays;
 
+import java.util.Arrays;
+
 public class MergeTwoArrays {
     /**
      * Merge Two Sorted Arrays
+     *Time: O(n) — single pass through both arrays, where n = total combined length
+     * Space: O(n) — the merged output array
      */
     public static void main(String[] args) {
-
-        //O(n) run time
 
         int[] firstArray = {1,3,5,7,8,9,11};
         int[] secondArray = {0,2,4,6,8,10,12};
 
-        System.out.println(mergeArrays(firstArray,secondArray));
-        mergeArrays(firstArray,secondArray);
+        System.out.println(Arrays.toString(mergeArrays(firstArray, secondArray)));
 
     }
 
@@ -42,7 +43,7 @@ public class MergeTwoArrays {
                 currentIndexMine++;
 
 
-                /** case : Alices array isn't exausted*/
+                /** case : Alice's array isn't exhausted */
             } else {
 
                 mergedArray[currentIndexMerged] = aliceArray[currentIndexAlice];
