@@ -30,9 +30,9 @@ public class RemoveEven {
     public static ArrayList<Integer> removeEven(ArrayList<Integer> numberArray) {
 
         for (int i = 0; i < numberArray.size(); i++) {
-            int even = numberArray.get(i) % 2;
-            if (even == 0) {
-                numberArray.remove(numberArray.remove(i));
+            if (numberArray.get(i) % 2 == 0) {
+                numberArray.remove(i);
+                i--;
             }
         }
         return numberArray;
