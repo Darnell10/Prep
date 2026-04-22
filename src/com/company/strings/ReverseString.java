@@ -6,7 +6,7 @@ public class ReverseString {
 
         System.out.println(reverseString("Darnell Otto"));
 
-        System.out.println(" Amy Darnell Jervon Victoria");
+        System.out.println(reverseWord(" Amy Darnell Jervon Victoria"));
 
 
     }
